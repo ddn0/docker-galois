@@ -1,0 +1,12 @@
+diff -Naur Galois-2.2.1/src/ll/HWTopoLinux.cpp Galois-2.2.1.new/src/ll/HWTopoLinux.cpp
+--- Galois-2.2.1/src/ll/HWTopoLinux.cpp	2014-02-27 19:56:27.000000000 +0000
++++ Galois-2.2.1.new/src/ll/HWTopoLinux.cpp	2015-12-13 09:08:50.000000000 +0000
+@@ -152,7 +152,7 @@
+   if (!f) {
+     free(path2);
+     free(path);
+-    GALOIS_SYS_DIE("failed opening ", path2);
++    //GALOIS_SYS_DIE("failed opening ", path2);
+     return vals; //Shouldn't get here
+   }
+ 
